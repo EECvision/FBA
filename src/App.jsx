@@ -1,18 +1,13 @@
-import classes from "./App.module.css";
+import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import UserDashboard from "./Pages/UserDashboard/UserDashboard";
-import Login from "./components/Login/Login";
-import Signup from "./Pages/Signup/Signup";
-import LandingPage from "./Pages/LandingPage/LandingPage.jsx";
 
 function App() {
   return (
-    <div className={classes.App}>
+    <div>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="login" element={<Login />} />
-        <Route path="UserDashboard" element={<UserDashboard />} />
-        <Route path="sign-up" element={<Signup />} />
+        <Route path="/" element={<div>Home</div>} />
+        <Route path="about" element={<div>About</div>} />
+        <Route path="sign-up" element={<div>Sign-up</div>} />
       </Routes>
     </div>
   );
