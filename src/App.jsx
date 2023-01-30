@@ -10,9 +10,9 @@ function App() {
     <div className={classes.App}>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/UserDashboard" element={<UserDashboard />} />
-        <Route path="/sign-up" element={<Signup />} />
+        <Route path="login" element={<Login />} />
+        <Route path="UserDashboard" element={<UserDashboard />} />
+        <Route path="sign-up" element={<Signup />} />
       </Routes>
     </div>
   );
