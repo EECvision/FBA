@@ -1,9 +1,11 @@
 // import { Button } from '@mui/material';
+import { Link } from "react-router-dom";
 import classes from "./Header.module.css";
 
 function Header() {
   return (
     <div className={classes.Main}>
+      <Link to={"/sign-up"}>sign-up</Link>
       <div className={classes.Header}>
         <div className={classes.Headercontent}>
           <h1 className={classes.Headertitle}>
